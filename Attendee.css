@@ -1,0 +1,50 @@
+/*body{text-align: center;background: #f2f6f8;}
+.img{position:absolute;z-index:1;}
+
+#container{
+    display:inline-block;
+    width:320px; 
+    height:480px;
+    margin: 0 auto; 
+    background: black; 
+    position:relative; 
+    border:5px solid black; 
+    border-radius: 10px; 
+    box-shadow: 0 5px 50px #333}
+
+#myCanvas{
+    position:relative;
+    z-index:20;
+}*/
+
+body{
+    color: white;
+}
+
+img.raw_map{
+	z-index: -1;
+	position: absolute;
+}
+
+canvas.myCanvas{
+	opacity: 0.6;
+	z-index: 0;
+	position: relative;
+}
+
+h2.title{
+    font-size: 40px;
+    font-family: "century gothic";
+}
+h3{
+    font-size: 15px;
+}
+div.cont{
+    padding: 10px;
+    background: white;
+    color: black;
+    margin: 20px -20px 0 20px;
+}
+div.right{
+    padding: 0;
+}

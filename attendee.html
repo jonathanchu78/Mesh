@@ -1,0 +1,164 @@
+
+
+<!doctype html>
+<html>
+	<head>
+		<title>Attendee</title>
+		
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+		<link rel="stylesheet" type="text/css" href="main.css">
+		
+		<link rel="stylesheet" type="text/css" href="Attendee.css">
+		<style>
+	      div.rt{
+	        font-family: "century gothic";
+	        font-size: 30px;
+	        padding-top: 10px; padding-right: 20px;
+	        text-align: right;
+        color: black;
+	      }
+      </style>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <a class="home" href="index.html">
+		    	  <img src="http://img.pixady.com/2017/04/731184_mesh.png" class="logo navbar-brand">
+		      </a>
+		      <!--<a class="navbar-brand" href="index.html">JChu</a>-->
+		    </div>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="rt">
+            Making it hard to mesh up.
+          </div>
+		</nav>
+
+		<div class="left col-lg-4 col-md-4 col-sm-12 col-xs-12">
+			<div class="cont">
+				<h2 class="title">CURRENT EVENTS</h2>
+				<p id="events">
+				</p>
+			</div>
+			
+			<div class="cont">
+				<h2 class="title">SCHEDULE</h2>
+				<p id="sched">
+				</p>
+			</div>
+		</div>
+
+			<div class="right col-lg-8 col-md-8 col-sm-12 col-xs-12" id = "temp">
+			</div>
+
+		
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function(){
+			var temp = document.getElementById("temp");
+				var json = localStorage.getItem("url");
+				var url = JSON.parse(json);
+				var woo = "<img class='raw_map' src=\"" + url + "\" alt=\"\" height=\"900\" width=\"700\"/>";
+				woo += "<canvas id = \"myCanvas\", width = \"700\", height = \"900\" style = \"border:1px solid #323232;\"></canvas>";
+				temp.innerHTML = woo;
+				var json = localStorage.getItem("events");
+				var html = "";
+				var events = JSON.parse(json);
+				events.sort(compare);
+				events.forEach(function(event){
+					console.log(event.time);
+				})
+
+			function compare(event1, event2) {
+				if (event1.year < event2.year) return -1;
+				if (event1.year > event2.year) return 1;
+
+				if (event1.month < event2.month) return -1;
+				if (event1.month > event2.month) return 1;
+
+				if (event1.day < event2.day) return -1;
+				if (event1.day > event2.day) return 1;
+
+				if (event1.time < event2.time) return -1;
+				if (event1.time > event2.time) return 1;
+
+				return 0;
+			}
+			})
+		</script>
+
+
+
+		<script>
+			var time = new Date();
+			var json = localStorage.getItem("events");
+			var events = JSON.parse(json);
+			var html = "";
+			var cssjavanodejsangularandriodstudio_______I_LIKE_CANTELOUPES = ""; //midnight fun			
+			
+			function run(){
+				html = "";
+				cssjavanodejsangularandriodstudio_______I_LIKE_CANTELOUPES = "";
+				if (events != null){
+					events.forEach(function(event){
+						displayEvent(event.longitude, event.latitude);
+						cur_time = 60 * time.getHours() + time.getMinutes();
+						if (event.time - cur_time <= 30){
+							//code if there is an event soon
+							storeValues(event);
+						}
+						storeValues2(event);
+					})
+				}
+				display();
+				display2();
+			}
+			
+			function displayEvent(x, y)
+			{
+				var grid_canvas = document.getElementById("myCanvas")
+				var grid = grid_canvas.getContext("2d");
+				
+				grid.fillStyle = 'blue';
+				grid.beginPath();
+				grid.arc(x, y, 5, 0, Math.PI*2, true);
+				grid.closePath();
+				grid.fill();
+			}
+			
+			function storeValues(event)
+			{
+				html = html + "<h3>" + event.name + "</h3>";
+				html = html + "<h3>Time: " + event.month +" " +event.day + " at " + event.hour + ":" + event.minute + "</h3>";
+				html = html + "<p>Description: " + event.description + "<\p>";
+			}
+			
+			function storeValues2(event)
+			{
+				cssjavanodejsangularandriodstudio_______I_LIKE_CANTELOUPES = cssjavanodejsangularandriodstudio_______I_LIKE_CANTELOUPES + "<h2>" + event.name + "</h2>";
+				cssjavanodejsangularandriodstudio_______I_LIKE_CANTELOUPES = cssjavanodejsangularandriodstudio_______I_LIKE_CANTELOUPES + "<h3>Time: " + event.month +" " + event.day + " at " + event.hour + ":" + event.minute + "</h3>";
+				cssjavanodejsangularandriodstudio_______I_LIKE_CANTELOUPES = cssjavanodejsangularandriodstudio_______I_LIKE_CANTELOUPES + "<p>Description: " + event.description + "<\p>";
+			}
+			
+			function display(){
+				var eventdiv = document.getElementById("events");
+				eventdiv.innerHTML = "";
+				eventdiv.innerHTML = html;
+			}
+			
+			function display2(){
+				var eventdiv = document.getElementById("sched");
+				eventdiv.innerHTML = "";
+				eventdiv.innerHTML = cssjavanodejsangularandriodstudio_______I_LIKE_CANTELOUPES;
+			}
+			
+			setInterval(run, 3000);
+			
+		</script>
+	</body>
+</html>
+
+				
+				

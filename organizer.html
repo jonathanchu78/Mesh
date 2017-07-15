@@ -1,0 +1,406 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Organizer</title>
+
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+		<link rel="stylesheet" type="text/css" href="main.css">
+
+		<link rel="stylesheet" type="text/css" href="organizer.css">
+		<style>
+	      div.rt{
+	        font-family: "century gothic";
+	        font-size: 30px;
+	        padding-top: 10px; padding-right: 20px;
+	        text-align: right;
+       		 color: black;
+	      }
+		</style>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <a class="home" href="index.html">
+		    	  <img src="http://img.pixady.com/2017/04/731184_mesh.png" class="logo navbar-brand">
+		      </a>
+		      <!--<a class="navbar-brand" href="index.html">JChu</a>-->
+		    </div>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="rt">
+            Making it hard to mesh up.
+          </div>
+		</nav>
+
+
+
+		<div class="container-fluid">
+			<div class="left col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<h1>
+					ENTER EVENTS
+				</h1>
+				
+
+				<div class="name input-group">
+				  <span class="input-group-addon" id="basic-addon2">Event Name</span>
+				  <input id="name" type="text" class="form-control" aria-describedby="basic-addon2"> 
+				</div>
+
+				<div class="l description input-group">
+					<textarea id="description" name="description" placeholder="Description" class="description" cols="30" rows="10"></textarea>
+				</div>
+				<!-- Single button -->
+
+
+				<div class="dropdown date input-group btn-group">
+				  <span class="dropdown input-group-addon" id="basic-addon2">Date</span>
+				  <!-- <input id="date" type="text" class="form-control" aria-describedby="basic-addon2"> -->
+				  <ul class="nav nav-tabs dropdown"> 
+				  <li role="presentation">
+				  <select class="dropdown month" id="month">
+				   <option value="Jan">Jan</option>
+				   <option value="Feb">Feb</option>
+				   <option value="March">March</option>
+				   <option value="Apr">Apr</option>
+				   <option value="May">May</option>
+				   <option value="Jun">Jun</option>
+				   <option value="Jul">Jul</option>
+				   <option value="Aug">Aug</option>
+				   <option value="Sep">Sep</option>
+				   <option value="Oct">Oct</option>
+				   <option value="Nov">Nov</option>
+				   <option value="Dec">Dec</option>
+				  </select>
+				  </li>
+					
+				  <li role="presentation">
+				  <select class="dropdown day" id="day">
+				   <option value="1">1</option>
+				   <option value="2">2</option>
+				   <option value="3">3</option>
+				   <option value="4">4</option>
+				   <option value="5">5</option>
+				   <option value="6">6</option>
+				   <option value="7">7</option>  
+				   <option value="8">8</option>
+				   <option value="9">9</option>
+				   <option value="10">10</option>
+				   <option value="11">11</option>
+				   <option value="12">12</option>
+				   <option value="13">13</option>
+				   <option value="14">14</option>
+				   <option value="15">15</option>
+				   <option value="16">16</option>
+				   <option value="17">17</option>
+				   <option value="18">18</option>
+				   <option value="19">19</option>
+				   <option value="20">20</option>
+				   <option value="21">21</option>
+				   <option value="22">22</option>
+				   <option value="23">23</option>
+				   <option value="24">24</option>
+				   <option value="25">25</option>
+				   <option value="26">26</option>
+				   <option value="27">27</option>
+				   <option value="28">28</option>
+				   <option value="29">29</option>
+				   <option value="30">30</option>
+				   <option value="31">31</option>
+
+
+				  </select>
+				  </li>
+
+				  <li role="presentation">
+				  <select class="dropdown year" id="year">
+				   <option value= "2012">2012</option>
+					<option value= "2013">2013</option>
+					<option value= "2014">2014</option>
+					<option value= "2015">2015</option>
+					<option value= "2016">2016</option>
+					<option value= "2017">2017</option>
+					<option value= "2018">2018</option>
+					<option value= "2019">2019</option>
+					<option value= "2020">2020</option>
+					<option value= "2021">2021</option>
+					<option value= "2022">2022</option>
+					<option value= "2023">2023</option>
+					<option value= "2024">2024</option>
+					<option value= "2025">2025</option>
+					<option value= "2026">2026</option>
+					<option value= "2027">2027</option>
+					<option value= "2028">2028</option>
+					<option value= "2029">2029</option>
+					<option value= "2030">2030</option>
+					<option value= "2031">2031</option>
+					<option value= "2032">2032</option>
+					<option value= "2033">2033</option>
+					<option value= "2034">2034</option>
+					<option value= "2035">2035</option>
+					<option value= "2036">2036</option>
+					<option value= "2037">2037</option>
+					<option value= "2038">2038</option>
+					<option value= "2039">2039</option>
+					<option value= "2040">2040</option>
+					<option value= "2041">2041</option>
+					<option value= "2042">2042</option>
+					<option value= "2043">2043</option>
+					<option value= "2044">2044</option>
+					<option value= "2045">2045</option>
+					<option value= "2046">2046</option>
+					<option value= "2047">2047</option>
+					<option value= "2048">2048</option>
+					<option value= "2049">2049</option>
+					<option value= "2050">2050</option>
+				   
+				  </select>
+				  </li>
+				  </ul>
+
+				</div>
+
+
+
+				<div class="l time input-group">
+				  <span class="input-group-addon" id="basic-addon2">Time</span>
+				  <!--<input id="time" type="text" class="form-control" aria-describedby="basic-addon2"> -->
+				  <ul class="nav nav-tabs dropdown"> 
+				  <li role="presentation">
+				  <select class="dropdown hour" id="hour">
+					<option value= "0">0</option>
+				  	<option value= "1">1</option>
+					<option value= "2">2</option>
+					<option value= "3">3</option>
+					<option value= "4">4</option>
+					<option value= "5">5</option>
+					<option value= "6">6</option>
+					<option value= "7">7</option>
+					<option value= "8">8</option>
+					<option value= "9">9</option>
+					<option value= "10">10</option>
+					<option value= "11">11</option>
+					<option value= "12">12</option>
+					<option value= "13">13</option>
+					<option value= "14">14</option>
+					<option value= "15">15</option>
+					<option value= "16">16</option>
+					<option value= "17">17</option>
+					<option value= "18">18</option>
+					<option value= "19">19</option>
+					<option value= "20">20</option>
+				    <option value= "21">21</option>
+					<option value= "22">22</option>
+					<option value= "23">23</option>
+				  </select>
+				  </li>	
+
+				  <li role="presentation">
+				  <select class="dropdown minute" id="minute">
+				   <option value="00">00</option>
+				   <option value="15">15</option>
+				   <option value="30">30</option>
+				   <option value="45">45</option>
+				  </select>
+				  </li>
+				  </ul>
+				</div>
+
+				 <!--
+				<div class="l date input-group">
+				  <span class="input-group-addon" id="basic-addon2">Date</span>
+				  <input id="date" type="text" class="form-control" aria-describedby="basic-addon2"> 
+				</div>
+
+				<div class="l time input-group">
+				  <span class="input-group-addon" id="basic-addon2">Time</span>
+				  <input id="time" type="text" class="form-control" aria-describedby="basic-addon2"> 
+				</div>
+				-->
+				<br>
+				Enter the URL of an image of your event's map.
+				<div class="imgln input-group">
+				  <span class="input-group-addon" id="basic-addon2">Image Link</span>
+				  <input id="link" type="text" class="form-control" aria-describedby="basic-addon2"> 
+				</div>
+
+				 <button type="button" id="imgbtn" class="btn btn-default">Use</button>
+					
+				<div id="map_data">
+				</div>
+				
+				<!--<div class="l lat col-lg-6 col-md-6 col-sm-12 col-xs-12 input-group">
+				  <span class="input-group-addon" id="basic-addon2">Latitude</span>
+				  <input id="lat" type="text" class="l form-control" aria-describedby="basic-addon2"> 
+				 </div>
+				
+				<div class="l lon col-lg-6 col-md-6 col-sm-12 col-xs-12 input-group">
+				  <span class="input-group-addon" id="basic-addon2">Longitude</span>
+				  <input id="lon" type="text" class="l form-control" aria-describedby="basic-addon2"> 
+				</div>-->
+
+				 <button type="button" id="addbutton" class="btn btn-lg submit btn-default">Add Event</button>
+				 <button type="button" id="deletebutton" class="btn btn-lg delete btn-default">Delete All Events</button>
+			</div>
+		
+			<div class="right col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<h1>YOUR EVENTS</h1>
+				<div class="table">
+					<p id="overall">
+						
+					</p>
+					<div class="lside">
+						
+					</div>
+					<p id="events">
+						
+					</p>
+				</div>
+			</div>
+		</div>	
+		
+
+		<!--<script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyDebYAHh8p-spU3x-8lLF9rq1Q2ubfu8zQ",
+		    authDomain: "la-hacks-ebe01.firebaseapp.com",
+		    databaseURL: "https://la-hacks-ebe01.firebaseio.com",
+		    projectId: "la-hacks-ebe01",
+		    storageBucket: "la-hacks-ebe01.appspot.com",
+		    messagingSenderId: "364241005806"
+		  };
+		  firebase.initializeApp(config);
+		</script>-->
+
+		<script> 
+			//let's upload the image
+
+		</script>
+
+		<script>
+			var lat = 0;
+			var lon = 0;
+
+			var overalldiv = document.getElementById("overall");
+			document.addEventListener("DOMContentLoaded", function(){
+				var json = localStorage.getItem("overall");
+				var overall = JSON.parse(json);
+				var html = "";
+				if (overall != null){
+					html = html + "<h2>" + overall.name + "</h2> Starting on " + overall.month + " " + overall.day + ", " + overall.year + " at " + overall.hour + ":" + overall.minute + "<br><br>";
+				}
+				eventdiv.innerHTML = html;
+			})
+
+			var eventdiv = document.getElementById("events");
+			document.addEventListener("DOMContentLoaded", function(){
+				var json = localStorage.getItem("events");
+				var html = "";
+				var events = JSON.parse(json);
+				if (events != null){
+					events.forEach(function(event){
+					html = html + "<h3>" + event.name + "</h3>"; console.log(event.name);
+					html = html + event.month + " " + event.day + ", " + event.year + " at " + event.hour + ":" + event.minute + " | ";
+					html = html + "Located at (" + event.latitude + ", " + event.longitude + ")<br>";
+					html = html + event.description + "<br><br>";
+				})
+				}
+				eventdiv.innerHTML += html;
+			})
+
+			
+
+			var imgbutton = document.getElementById("imgbtn");
+			var imgdiv = document.getElementById("map_data");
+			if (imgbutton != null)
+			imgbutton.addEventListener("click", function(){
+				var url = document.getElementById("link").value;
+				localStorage.setItem("url", JSON.stringify(url));
+				//change height here
+				canvas_height = 450;
+				var html = "<img class='raw_map' src=\"" +url+ "\" alt=\"\" height=\"900\" width=\"700\"/>";
+				html += "<canvas id = \"myCanvas\", width = \"700\", height = \"900\" style = \"border:1px solid #323232;\" onclick=\"myFunction()\">"
+				imgdiv.innerHTML = html;
+			})
+
+			function myFunction() {
+				var xPosition = 0;
+				var yPosition = 0;
+				xPosition = event.pageX - 75;
+				yPosition = event.pageY - 510;
+				lat = xPosition;
+				lon = yPosition;
+				displayEvent(lat, lon);
+				console.log(lat);
+				console.log(lon);
+			}
+
+			var addbutton = document.getElementById("addbutton");
+			addbutton.addEventListener("click", function(){
+				var events = getEventsArray();
+				var n = document.getElementById("name").value;
+				var de = document.getElementById("description").value;
+				var mo = document.getElementById("month").value;
+				var day = document.getElementById("day").value;
+				var yr = document.getElementById("year").value;
+				var ho = document.getElementById("hour").value;
+				var mn = document.getElementById("minute").value;
+				var time = ho * 60 + mn;
+				var event = {
+					name:n,
+					description: de,
+					month: mo,
+					day: day,
+					year: yr,
+					hour: ho,
+					minute: mn,
+					time: time,
+					latitude: lat,
+					longitude: lon,
+				}
+				events.push(event);
+				localStorage.setItem("events", JSON.stringify(events));
+				location.reload();
+			})
+
+			var deletebutton = document.getElementById("deletebutton");
+			deletebutton.addEventListener("click", function(){
+				deleteAllEvents();
+			})
+
+			function getEventsArray(){
+				var json = localStorage.getItem("events");
+				if (json == null){
+					return [];
+				}
+				else{
+					var events = JSON.parse(json);
+					return events;
+				}
+			}
+
+			function deleteAllEvents(){
+				localStorage.removeItem("events");
+				eventdiv.innerHTML = "";
+				location.reload();
+			}
+
+			function displayEvent(x, y)
+			{
+				var grid_canvas = document.getElementById("myCanvas")
+				var grid = grid_canvas.getContext("2d");
+				grid.clearRect(0, 0, myCanvas.width, myCanvas.height);
+				
+				grid.fillStyle = 'blue';
+				grid.beginPath();
+				grid.arc(x, y, 10, 0, Math.PI*2, true);
+				grid.closePath();
+				grid.fill();
+			}
+		</script>
+	</body>
+
+</html>

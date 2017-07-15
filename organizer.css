@@ -1,0 +1,112 @@
+
+a{
+	background: blue;
+}
+
+body{
+	text-align: left;
+	color: white;
+}
+
+div.name{
+	margin: 30px 0 0 0;
+	width: 80%;
+}
+
+div.left{
+	padding: 0 0 20px 60px;
+}
+
+div.l{
+	width: 40%;
+	margin: 10px 0;
+}
+
+div.description{
+	width: 80%; margin-bottom: 30px;
+	color: black;
+}
+
+textarea.description{
+	height: 70px;
+	width: 100%;
+}
+
+button.submit {
+	margin-top: 20px;
+	background-color: white;
+}
+
+button.delete{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+div.right{
+	padding: 0 20px 0 0;
+	color: white;
+}
+
+div.table{
+	margin: 30px 20px 0 0;
+	background: white;
+	color: black;
+	padding: 5px 20px;
+}
+
+h1{
+	font-size: 40px;
+	margin: 20px 0 30px 0;
+}
+
+h3{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	font-family: "Century gothic";
+}
+
+p{
+	font-size: 11px;
+}
+
+div.imgln{
+	padding: 0;
+	margin: 5px 0 5px 0;
+	width: 80%;
+}
+
+button.imgbtn{
+	padding: 0;
+	margin: 0 0 10px;
+}
+
+div.dropdown{
+	width:80%;
+	color: black;
+}
+
+select.dropdown{
+	height: 27px;
+}
+
+ul.dropdown{
+	background: #ff6666;
+	outline: none;
+	border: none;
+}
+
+div.time{
+	color: black;
+}
+
+img.raw_map{
+	z-index: -1;
+	position: absolute;
+}
+
+canvas.myCanvas{
+	opacity: 0.6;
+	z-index: 0;
+	position: relative;
+}
